@@ -4,6 +4,7 @@ import { NavLink } from 'react-router-dom'
 const Navbar = () => {
   return (
     <>
+    <div className='nav'>
         <div className='navbar-left'>
             <img className='nav-logo' src='../../public/images/streamflex.png' alt="" />
             <p className='nav-title'>Stream Flex</p>
@@ -13,7 +14,7 @@ const Navbar = () => {
                 <button className='access-btn'>Access</button>
             </NavLink>
         </div>
-
+     </div>
     </>
   )
 }
