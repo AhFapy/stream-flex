@@ -1,10 +1,7 @@
-body {
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-}
-
-* {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
@@ -13,7 +10,8 @@ body {
     justify-content: start;
     align-items: start;
     flex-direction: column;
-
+    height: auto;
+    width: 100vw;
 }
 
 .nav {
@@ -83,7 +81,6 @@ body {
 .start-div {
     width: 100%;
     height: 100vh;
-    background-color: slategrey;
 }
 
 .start-header {
@@ -120,14 +117,180 @@ body {
 
 .second-span-container {
     width: 100%;
-    background-color: slateblue;
-    height: 10rem;
+    height: 5rem;
     display: flex;
     justify-content: end;
+    align-items: center;
     margin-top: 1rem;
 }
 
 .second-span {
-    padding-right: 1rem;
+    width: 100vw;
     text-align: right;
+    margin-right: 0.5rem;
+}
+
+.line {
+    height: 4rem;
+    width: 1px;
+    background: linear-gradient(0deg, #250AFF 60%, #F80000 80%);
+    margin-right: 0.5rem;
+}
+
+.default-button {
+    display: flex;
+    background: rgb(28,0,255);
+    background: linear-gradient(90deg, rgba(28,0,255,0.55) 62%, rgba(216,18,37,0.55) 80%);
+    width: 50%;
+    height: 2rem;
+    justify-content: center;
+    align-items: center;
+    font-weight: normal;
+    color: white;
+    border-radius: 2rem;
+}
+
+.learn-more {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 5rem;
+}
+
+.features {
+    width: 100vw;
+    display:inline-block;
+    border-radius:3px;
+    border-bottom: 2px dotted #fff;
+    border-top: 2px dotted #fff;
+    background:
+     linear-gradient(#fff 0 0) padding-box,
+     linear-gradient(270deg, rgba(28,0,255,0.55) 62%, rgba(216,18,37,0.55) 80%);    
+}
+.feature {
+    width: 100vw;
+    display:inline-block;
+    border-radius:3px;
+    border-top: 2px dotted #fff;
+    background:
+     linear-gradient(#fff 0 0) padding-box,
+     linear-gradient(270deg, rgba(28,0,255,0.55) 62%, rgba(216,18,37,0.55) 80%);    
+
+}
+
+.left {
+    text-align: end;
+}
+
+.feature-header {
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    margin-left: 1rem;
+}
+
+.feature-header-left {
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    margin-right: 1rem;
+}
+
+
+.gradient-border {
+    width: 100vw;
+    height: 5rem;
+    padding-top: 0.5%;
+    padding-left: 0.5%;
+    border-radius: 1rem;
+    background: linear-gradient(90deg, rgba(28,0,255,1) 62%, rgba(216,18,37,1) 80%);    
+    margin-bottom: 2rem;
+}
+
+.feature-media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 99%;
+    height: 99%;
+    border-radius: 1rem;
+    background-color: white;
+}
+.devices-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.plan-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    margin-top: 2rem;
+}
+
+.plan {
+    margin-top: 1rem;
+    padding-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 10%;
+}
+
+.plan-title {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.gradient-border-plan {
+    width: 75vw;
+    padding-top: 0.5%;
+    padding-left: 0.5%;
+    padding-bottom: 0.1rem;
+    border-radius: 1rem;
+    background: linear-gradient(90deg, rgba(28,0,255,0.8) 62%, rgba(216,18,37,0.8) 80%);    
+    margin-bottom: 2rem;
+}
+
+.gradient-blocker {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 99%;
+    height: 99%;
+    border-radius: 1rem;
+    background-color: white;
+}
+
+.gradient-blocker-transparent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 99%;
+    height: 99%;
+    border-radius: 1rem;
+    background-color: transparent;
+    color: white;
+
+}
+
+.available {
+    margin-bottom: 0.2rem;
+    margin-top: 0.2rem;
+}
+
+.not-available {
+    opacity: 50%;
+    margin-bottom: 0.2rem;
+    margin-top: 0.2rem;
+}
+
+.active {
+    background-color: #000;
 }

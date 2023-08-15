@@ -1,9 +1,12 @@
 import React from 'react'
 import Navbar from '../Components/Navbar'
 import "./styles.css"
+import DefaultButton from '../Components/defaultButton'
+import FeaturesComponent from '../Components/HomeComponents/FeaturesComponent'
 
 const HomePage = () => {
   return (
+    <>
     <div className='home-page'>
         <Navbar/>
         <div className='start-div'>
@@ -14,9 +17,15 @@ const HomePage = () => {
           </div>
           <div className='second-span-container'>
             <span className='second-span'>Watch series and films <br/> like NEVER before</span>
+            <div className='line'></div>
           </div>
+          <div className='learn-more'>
+            <DefaultButton value="Learn More"/>
+          </div>
+          <FeaturesComponent/>
         </div>
     </div>
+    </>
   )
 }
 
